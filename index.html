@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="heard">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#/game" id="nav_/game">无尽模式</a>
+                </li>
+                <li>
+                    <a href="#/emigrated" id="nav_/emigrated">闯关模式</a>
+                </li>
+                <li>
+                    <a href="#/statistics" id="nav_/statistics">统计和设置</a>
+                </li>
+
+            </ul>
+            <pre>帮组：上 = w或↑,下 = s或↓,左 = a或←,右 = d或→, 按任意方向键开始。长按可以加速</pre>
+            <div>
+                目标分数: <span id="target">0</span>, 当前分数: <span id="present">0</span>
+            </div>
+        </nav>
+    </div>
+    <!-- 主体部分 -->
+    <div class="main">
+        <!-- 无尽模式 -->
+        <div class="game" id="/game">
+            <div></div>
+        </div>
+        <!-- 闯关模式 -->
+        <div class="emigrated" id="/emigrated">
+            <div class="customsPassWarp" id="customsPassWarp"></div>
+        </div>
+        <!-- 统计 -->
+        <div class="statistics" id="/statistics"></div>
+    </div>
+
+    <!-- 成功的弹出框 -->
+    <div class="modal none" id="modal_success">
+        <div class="content">
+            <p>恭喜你，通关了</p>
+            <button class="getBack">返回</button>
+        </div>
+    </div>
+
+    <!-- 失败的弹出框 -->
+    <div class="modal none" id="modal_error">
+        <div class="content">
+            <p>很遗憾，失败了</p>
+            <div class="box">
+                <button class="restart">重新开始</button>
+                <button class="getBack getBackNone">返回</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(rgba(42, 150, 219, 0.9), rgba(153, 50, 231, 0.9));
+    height: 100vh;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+pre {
+    right: 60px;
+    top: 10px;
+    font-size: 16px;
+}
+
+.map {
+    width: 900px;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.game,
+.emigrated {
+    height: 100%;
+    display: flex;
+}
+
+.customsPassWarp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.customsPassWarp .customsPass {
+    width: calc(20% - 10px);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.customsPassWarp .noPass {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.sidebar {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar button {
+    width: 100%;
+    line-height: 40px;
+}
+
+.map .row {
+    display: flex;
+    flex: 1;
+}
+
+.map .row .col {
+    flex: 1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    border-right: none;
+}
+
+.map .row .col:last-child {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.map .row:last-child .col {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.map .snake {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+.map .fruit {
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    background-color: blue;
+    margin: 1px;
+}
+
+nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: wheat;
+}
+
+nav ul li a:focus {
+    color: red;
+}
+
+.main {
+    height: calc(90vh - 30px);
+    margin: 20px;
+}
+
+.obstacle {
+    background-color: rgb(91, 136, 154) !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.modal {
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+}
+
+.modal .content {
+    position: fixed;
+    width: 25%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.modal .content .box {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 50%;
+    align-items: center;
+}
+
+.modal .content button {
+    height: 80%;
+    padding: 0 10%;
+    cursor: pointer;
+}
+
+.statistics {
+    flex-direction: column;
+}
+
+.statistics p {
+    line-height: 40px;
+}
+
+.statistics button {
+    cursor: pointer;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.map .row .col .speedup {
+    background-color: rgb(107, 106, 106);
+    /* animation: speedup 0.5s; */
+}
+
+
+/* @keyframes speedup {
+  0% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: yellow;
+  }
+} */
